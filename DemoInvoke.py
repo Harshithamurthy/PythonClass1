@@ -12,3 +12,12 @@ Add(40, 7)
 Sub(30, 9)
 Mul(5, 10)
 Div(40, 5)
+
+import DemoCalculator
+import math
+
+content = dir(DemoCalculator)
+print(content)
+
+content2 = dir(math)
+print(content2)
