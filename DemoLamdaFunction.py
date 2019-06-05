@@ -26,3 +26,28 @@ def Add(a, b, func):
 addLambda = lambda a, b : a + b
 Add(100, 50, addLambda)
 
+
+c = 0      # Global Variable
+defaultValue = 10
+#Normal Function
+def Add(a, b):
+    c = a + b + defaultValue
+    d = 10          # Local Variable
+    print("Add result is ", c)
+
+
+def Sub(a, b):
+    c = a - b + defaultValue
+    #print(d)   # d is local variable and we cant use it in other functions
+    print("Sub result is ", c)
+
+
+def Mul(a, b):
+    c = a * b
+    print("Mul result is ", c)
+
+
+# Lambda Function
+Add(100, 50)
+Sub(100, 50)
+Mul(100, 50)
